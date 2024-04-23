@@ -2909,12 +2909,12 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #4e73df;
+  color: #fff;
   text-decoration: none;
 }
 
 .btn-link:hover {
-  color: #224abe;
+  color: rgba(205, 50, 50, 1);
   text-decoration: underline;
 }
 
@@ -3020,7 +3020,7 @@ input[type="button"].btn-block {
   z-index: 1000;
   display: none;
   float: left;
-  min-width: 10rem;
+  min-width: 11rem;
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 0.85rem;
@@ -4036,15 +4036,14 @@ input[type="button"].btn-block {
   cursor: default;
 }
 
-.nav-tabs {
-  border-bottom: 1px solid #dddfeb;
+.nav-link.active {
+  color: rgba(205, 50, 50, 1);
+  background-color: #fff;
 }
 
 .nav-tabs .nav-link {
   margin-bottom: -1px;
   border: 1px solid transparent;
-  border-top-left-radius: 0.35rem;
-  border-top-right-radius: 0.35rem;
 }
 
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
@@ -4059,7 +4058,7 @@ input[type="button"].btn-block {
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #6e707e;
+  color: rgba(205, 50, 50, 1);
   background-color: #fff;
   border-color: #dddfeb #dddfeb #fff;
 }
@@ -4077,7 +4076,7 @@ input[type="button"].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #4e73df;
+  background-color: rgba(205, 50, 50, 1);
 }
 
 .nav-fill > .nav-link,
@@ -4108,6 +4107,7 @@ input[type="button"].btn-block {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+  background-color: rgba(205, 50, 50, 1);
 }
 
 .navbar .container,
@@ -10296,27 +10296,27 @@ a:focus {
 }
 
 .topbar.navbar-dark .navbar-nav .nav-item .nav-link {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(205, 50, 50, 0.8);
 }
 
 .topbar.navbar-dark .navbar-nav .nav-item .nav-link:hover {
-  color: #fff;
+  color: rgba(205, 50, 50, 0.8);
 }
 
 .topbar.navbar-dark .navbar-nav .nav-item .nav-link:active {
-  color: #fff;
+  color: rgba(205, 50, 50, 0.8);
 }
 
 .topbar.navbar-light .navbar-nav .nav-item .nav-link {
-  color: #d1d3e2;
+  color: #000;
 }
 
 .topbar.navbar-light .navbar-nav .nav-item .nav-link:hover {
-  color: #b7b9cc;
+  color: #000;
 }
 
 .topbar.navbar-light .navbar-nav .nav-item .nav-link:active {
-  color: #858796;
+  color: #000;
 }
 
 .sidebar {
@@ -10682,55 +10682,55 @@ a:focus {
 }
 
 .sidebar-dark hr.sidebar-divider {
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-top: 1px solid rgba(205, 50, 50, 0.15);
 }
 
 .sidebar-dark .sidebar-heading {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(205, 50, 50, 0.4);
 }
 
 .sidebar-dark .nav-item .nav-link {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(205, 50, 50, 0.8);
 }
 
 .sidebar-dark .nav-item .nav-link i {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(205, 50, 50, 0.3);
 }
 
 .sidebar-dark .nav-item .nav-link:active, .sidebar-dark .nav-item .nav-link:focus, .sidebar-dark .nav-item .nav-link:hover {
-  color: #fff;
+  color: rgba(205, 50, 50, 0.8);
 }
 
 .sidebar-dark .nav-item .nav-link:active i, .sidebar-dark .nav-item .nav-link:focus i, .sidebar-dark .nav-item .nav-link:hover i {
-  color: #fff;
+  color: rgba(205, 50, 50, 0.8);
 }
 
 .sidebar-dark .nav-item .nav-link[data-toggle="collapse"]::after {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(205, 50, 50, 0.5);
 }
 
 .sidebar-dark .nav-item.active .nav-link {
-  color: #fff;
+  color: rgba(205, 50, 50, 0.8);
 }
 
 .sidebar-dark .nav-item.active .nav-link i {
-  color: #fff;
+  color: rgba(205, 50, 50, 0.8);
 }
 
 .sidebar-dark #sidebarToggle {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(205, 50, 50, 0.2);
 }
 
 .sidebar-dark #sidebarToggle::after {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(205, 50, 50, 0.5);
 }
 
 .sidebar-dark #sidebarToggle:hover {
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(205, 50, 50, 0.25);
 }
 
 .sidebar-dark.toggled #sidebarToggle::after {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(205, 50, 50, 0.5);
 }
 
 .btn-circle {
@@ -11278,4 +11278,8 @@ footer.sticky-footer .copyright {
 
 body.sidebar-toggled footer.sticky-footer {
   width: 100%;
+}
+
+.group-selector:hover {
+  background-color: white;
 }
