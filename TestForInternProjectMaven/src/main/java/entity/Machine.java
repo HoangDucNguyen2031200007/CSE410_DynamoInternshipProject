@@ -12,9 +12,9 @@ import java.io.Serializable;
  */
 public class Machine implements Serializable {
     private int machineId;
-    private long startTime;
-    private long endTime;
-    private long spanTime;
+    private String startTime;
+    private String endTime;
+    private int spanTime;
     private String status;
     private String power;
     private int opId;
@@ -23,14 +23,14 @@ public class Machine implements Serializable {
     private int pgTime;
     private int partNum;
     private int step;
-    private int points;
+    private int point;
     private String bCode;
 
     public long getSpanTime() {
         return spanTime;
     }
 
-    public void setSpanTime(long spanTime) {
+    public void setSpanTime(int spanTime) {
         this.spanTime = spanTime;
     }
 
@@ -106,7 +106,7 @@ public class Machine implements Serializable {
         this.bCode = bCode;
     }
 
-    public Machine(int machineId, long startTime, long endTime, long spanTime, String status, String power, int opId, String orCode, String dgCode, int pgTime, int partNum, int step, int points, String bCode) {
+    public Machine(int machineId, String startTime, String endTime, int spanTime, String status, String power, int opId, String orCode, String dgCode, int pgTime, int partNum, int step, int points, String bCode) {
         this.machineId = machineId;
         this.startTime = startTime;
         this.endTime = endTime;
@@ -119,7 +119,7 @@ public class Machine implements Serializable {
         this.pgTime = pgTime;
         this.partNum = partNum;
         this.step = step;
-        this.points = points;
+        this.point = points;
         this.bCode = bCode;
     }
 
@@ -131,28 +131,28 @@ public class Machine implements Serializable {
         this.machineId = machineId;
     }
 
-    public long getStartTime() {
+    public String getStartTime() {
         return startTime;
     }
 
-    public void setStartTime(long startTime) {
+    public void setStartTime(String startTime) {
         this.startTime = startTime;
     }
 
-    public long getEndTime() {
+    public String getEndTime() {
         return endTime;
     }
 
-    public void setEndTime(long endTime) {
+    public void setEndTime(String endTime) {
         this.endTime = endTime;
     }
 
-    public int getPoints() {
-        return points;
+    public int getPoint() {
+        return point;
     }
 
-    public void setPoints(int points) {
-        this.points = points;
+    public void setPoint(int point) {
+        this.point = point;
     }
     
     
